@@ -1,0 +1,336 @@
+/*** FONTS ***/
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v5/8Lg6LX8-ntOHUQnvQ0E7o3kM3noZBEK7GO5cjeZsgeI.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v5/8Lg6LX8-ntOHUQnvQ0E7o6VKeqlTLmz9wgW802Ijrr8.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v5/8Lg6LX8-ntOHUQnvQ0E7o98XTtHtBdEH02X-npdYcaI.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v5/8Lg6LX8-ntOHUQnvQ0E7o4HIgCyF_r7uhNjO5r5pEXE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v5/8Lg6LX8-ntOHUQnvQ0E7o08SWvhA5BcWCS8xVZDIH7E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/**** END FONTS ****/
+/*** GLOBAL STYLES AFTER NORMALIZE ****/
+html,body,*, *:after, *:before {
+    -webkit-font-smoothing:subpixel-antialiased;
+    -moz-font-smoothing:subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing:antialiased;
+    font-smoothing:subpixel-antialiased;
+}	
+html,body {
+	color: #f5fffa;
+	background: #959595;	
+}
+
+a{
+    color: #522e88!important;	
+    line-height: 1.5;
+	padding: 2px;
+	border-radius: 4px;
+ } 
+ a:hover{
+	 color:#ec00d6;
+	 text-decoration: underline;
+ }
+ a:visited{
+	 color: #f5fffa;
+ }
+ a:active{
+	 color:#522e88;
+	 background-color: transparent;
+ }
+ 
+/*** END GLOBAL STYLES ***/
+
+		  .nav{
+		  	background: url("img/bannerbg.png") center center fixed;
+		  	width: 100%;
+		  	height: 80px;
+		  	position: fixed;
+		  }
+
+	      .jumbotron {
+	        width: 100%;
+	        height: 720px;
+	        padding-top: 75px;
+	        text-align: center;
+	        background-color: #4B367C;
+
+	      }
+          .video-cover{
+		    background-attachment: scroll;
+			background-clip: border-box;
+			background-color: rgb(0, 0, 0);
+			background-image: none;
+			background-origin: padding-box;
+			background-position: 0% 0%;
+			background-position-x: 0%;
+			background-position-y: 0%;
+			background-repeat: repeat;
+			background-size: auto auto;
+			box-sizing: border-box;
+			color: rgb(51, 51, 51);
+			height: 400px;
+			position: absolute;
+		  }
+		  .video-cover-inner{
+			bottom: 0px;
+			box-sizing: border-box;
+			color: rgb(51, 51, 51);
+			left: 0px;
+			overflow: hidden;
+			overflow-x: hidden;
+			overflow-y: hidden;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+		  }
+		.top{
+			background-attachment: scroll;
+			background-clip: border-box;
+			background-color: rgba(0, 0, 0, 0.45);
+			background-image: none;
+			background-origin: padding-box;
+			background-position: 0% 0%;
+			background-position-x: 0%;
+			background-position-y: 0%;
+			background-repeat: repeat;
+			background-size: auto auto;
+			box-sizing: border-box;
+			color: rgb(51, 51, 51);
+			height: 400px;
+			left: 0px;
+			position: absolute;
+			top: 0px;
+			width: 1891px;
+		}
+	      .btn-header {
+	      	background-color: #522E88;
+	      }
+
+	      .headerItems {
+	      	margin-top: 18px;
+	      }
+
+	      .navbar {
+	      	display: inline-block;
+	      	padding-top: 15px;
+	      	display: block;
+	      }
+
+	      .nav-link {
+	      	font-family: 'Press Start 2P', cursive;
+	      	font-size: 18pt;
+	      	color: white;
+	      	padding: 15px;
+	      }
+
+	      li {
+			list-style-type: none;
+	      }
+
+	      a {
+	      	color: black;
+	      	text-decoration: none;
+	      }
+
+	      a:hover {
+	      	text-decoration: none;
+	      }
+
+	      #streamwindow {
+	      	margin-top: 50px;
+	      	display: block;
+	      	text-align: center;
+	      }
+
+	      #email {
+	        width: 300px;
+	      }
+
+	      .card-block {
+	      	text-align: center;
+	      }
+
+	      .card-img-top {
+	        width: 95%;
+	        margin-left: 2.5%;
+	        margin-top: 2.5%;
+	        height: 150px;
+	        text-align: center;
+	      }
+
+	      .card {
+	      	text-align: center;
+	      	width: 300px;
+	      	height: 350px;
+	      }
+
+	      #footer {
+	        position: relative;
+			bottom:0px;
+			left:0px;
+			clear:both;
+			width: 100%;
+			z-index: 999;
+			height: 50px;
+			background: #f1f5fb;
+			-webkit-box-shadow: inset 0px 4px 13px #CCD9EA;
+			box-shadow: inset 0px 4px 13px #CCD9EA;
+			font-family:"PRESS START 2P", "Arial Black", sans-serif;
+			color: #ec00d6;
+			size: 12pt;
+			text-align: center;
+			vertical-align: bottom;
+			padding-top:10px;
+			margin-top: 10px;
+	      }
+
+	      body {
+	        position: relative;
+	      }
+
+
+
+
+/*** OLD 
+design-specific styles 
+
+
+ article{
+  max-width: 75%!important;
+  overflow-y: scroll;
+ }
+ 
+.body{
+	padding-right:15%;
+}
+.topbanner{
+  font-family: "Press Start 2P", sans-serif;
+  size: 21pt;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #522e88;
+  background: url('img/bannerbg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	z-index: 9999;
+}
+.bannercenter{
+	margin-left: 30%;
+	text-align: center;
+	vertical-align: middle;
+	clear:both;
+}
+.linkbar{
+	text-align: center;
+	background-color: #522e88;
+	clear:both;
+    z-index:99999;
+}
+ .linkbar a{
+	font-family: "Arial Black", Arial, sans-serif;
+    size: 16pt;
+    color: #ffffff!important;	
+    line-height: 1.5;
+	padding: 2px;
+	border-radius: 4px;
+ } 
+ .linkbar a:hover{
+	 color:#c961b6;
+	 text-decoration: underline;
+ }
+ .linkbar a:visited{
+	 color: #ec00d6;
+ }
+ .linkbar a:active{
+	 color:#f5fffa;
+	 background-color: transparent;
+ }
+ 
+ 
+.sidebar {
+	height: 100%;
+	background-color: #000000;
+	color: #f5fffa;
+	width: 33%!important;
+	clear:none;
+	margin-right: 0px;
+	padding-right: 0px;
+	position: fixed;
+	top: 74px;
+	right: 0px;
+	overflow-y:scroll;
+}
+.sidebanner{
+	background: #1e3e87;
+	background-size: cover;
+	color: #F5FFFA;
+	line-height:1.5;
+	height: 25px;
+	position: absolute;
+	left:0px;
+	clear:both;
+	width: 100%;
+}
+.sidecontainer{
+	padding-top: 25px;
+	position:relative;
+	padding-bottom:150px;
+}
+.byline{
+	text-align:right;
+}
+
+
+
+footer {
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	clear:both;
+	width: 100%;
+	z-index: 999;
+	height: 50px;
+	background: #f1f5fb;
+	-webkit-box-shadow: inset 0px 4px 13px #CCD9EA;
+	box-shadow: inset 0px 4px 13px #CCD9EA;
+	font-family:"PRESS START 2P", "Arial Black", sans-serif;
+	color: #ec00d6;
+	size: 12pt;
+	text-align: center;
+	vertical-align: bottom;
+	padding-top:10px;
+	margin-top: 10px;
+}
+
+***/
