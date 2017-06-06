@@ -44,8 +44,12 @@ html,body,*, *:after, *:before {
     font-smoothing:subpixel-antialiased;
 }	
 html,body {
+	text-align:left;
 	color: #f5fffa;
 	background: #959595;
+	margin:0px;
+	padding:0px;
+	
 }
 
 a{
@@ -75,7 +79,9 @@ a{
 
 
 /*** design-specific styles ***/
-
+.body{
+	padding-right:15%;
+}
 .topbanner{
   font-family: "Press Start 2P", sans-serif;
   size: 21pt;
