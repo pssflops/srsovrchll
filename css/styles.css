@@ -91,20 +91,21 @@ a{
 			background-size: cover;
 			box-sizing: border-box;
 			color: rgb(51, 51, 51);
-			height: 400px;
 			position: absolute;
+			height: 640px;
 			vertical-align:top;
 			width:100%;
 		  }
 		  .video-cover-inner{
-			bottom: 0px;
 			box-sizing: border-box;
 			color: rgb(51, 51, 51);
-			left: 0px;
-			overflow: hidden;
 			position: absolute;
 			right: 0px;
 			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			overflow: hidden;
+			background-size:cover;
 		  }
 	      .btn-header {
 	      	background-color: #522E88;
