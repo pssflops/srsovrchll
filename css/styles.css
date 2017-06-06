@@ -46,6 +46,7 @@ html,body,*, *:after, *:before {
 html,body {
 	color: #f5fffa;
 	background: #959595;	
+			overflow-x: hidden;
 }
 
 a{
@@ -65,7 +66,11 @@ a{
 	 color:#FFFFFF;
 	 background-color: #522e88;
  }
- 
+ video { 
+  -webkit-transform: scaleX(2); 
+  -moz-transform: scaleX(2);
+    object-fit: fill;
+}
 /*** END GLOBAL STYLES ***/
 
 		  .nav{
@@ -92,10 +97,11 @@ a{
 			position: absolute;
 			min-height: 640px;
 			vertical-align:top;
+			text-align:center;
 			width:100%;
+
 		  }
 		  .video-cover-inner{
-			display: inline;
 			box-sizing: border-box;
 			position: absolute;
 			right: 0px;
