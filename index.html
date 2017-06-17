@@ -75,9 +75,9 @@
           </div><!-- END Twitch jumbotron replacement -->
 	    </div> 
     
-	    <div class="container text-center">
+	    <div class="container">
 
-	      <div class="row">
+	      <div class="row text-center">
 
 	          <h1 id="contentTitle" class="col display-3 reverse">Hot VODs</h1>
 
@@ -150,16 +150,23 @@
 	      </div>
 
 	    </div>
-    <hr class="half-hr" />
-	
+
 		<div class="container" id="articles">
-		  <h1 class="text-center">Latest Articles</h1>
+		
+		  <div class="row text-center">
+		  
+		    <h1 class="col display-3 reverse">Latest Articles</h1>
+            <br />
+			<hr class="half-hr" />
+			
+		  </div>  
+
 		   <span class="articles">
-		     <br />
-		   </span>
 		   
-    <hr class="half-hr" />
-		</div>
+		   </span> <!-- close articles -->
+		   
+		</div> <!-- close article container -->
+		
 	    <div class="container" id="footer">
 
 	      <div class="footerItem">
@@ -174,7 +181,7 @@
     <script type="text/javascript">
 	  $(document).ready( function(){
 	    $("span.articles").load("articles/article1.html #article-list", function(){
-	      console.log("loaded articles!" )
+	      console.log("loaded articles!" ); // import article file so it's easy to append new stories when they are ready.
 	    });
 	  });
     </script>
