@@ -50,30 +50,27 @@ html,body {
 }
 
 a{
-    color: #FFFFFF;	
+    color:#522e88; 	
     line-height: 1.5;
 	padding: 2px;
 	border-radius: 4px;
  } 
  a:hover{
-	 color:#ec00d6;
-	 text-decoration: underline;
+	 color:#ec00d6!important;
  }
  a:visited{
-	 color: #ec00d6;
+	 color: #FFFFFF;
  }
  a:active{
-	 color:#FFFFFF;
-	 background-color: #522e88;
+	 color:#522e88; 
  }
  video { 
-
-    object-fit: fill;
+    object-fit: contain;
 }
 /*** END GLOBAL STYLES ***/
 
 		  .nav{
-		  	background:#522e88 url("img/bannerbg.png") center center fixed;
+		  	background:#522e88 url("../img/bannerbg.png") center center fixed;
 			background-size: cover;
 		  	width: 100%;
 		  	height: 80px;
@@ -96,17 +93,26 @@ a{
 			min-height: 640px;
 			overflow-x: hidden;
 			border-radius:4px;
+			width:100%;
 		  }
-		  .video-cover-inner{
-			box-sizing: border-box;
-			position: absolute;
-			right: 0px;
-			top: 0px;
-			left: 0px;
-			bottom: 0px;
-            text-align:center;
-			vertical-align:top;
-			overflow: hidden;
+		.video-cover-inner{
+		    box-sizing: border-box;
+		    position: absolute;
+            top:0; 
+            left:0;
+		    right:0;
+		    bottom:0;
+            min-width: 100%; 
+            overflow: hidden;
+		}
+		.video-cover-inner video{
+		    left: 50%;
+            min-height: 100%;
+            min-width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+		    z-index: 0;
 		}
 	      .btn-header {
 	      	background-color: #522E88;
@@ -193,122 +199,6 @@ a{
 	      body {
 	        position: relative;
 	      }
-
-
-
-
-/*** OLD 
-design-specific styles 
-
-
- article{
-  max-width: 75%!important;
-  overflow-y: scroll;
- }
- 
-.body{
-	padding-right:15%;
-}
-.topbanner{
-  font-family: "Press Start 2P", sans-serif;
-  size: 21pt;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  background-color: #522e88;
-  background: url('img/bannerbg.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	z-index: 9999;
-}
-.bannercenter{
-	margin-left: 30%;
-	text-align: center;
-	vertical-align: middle;
-	clear:both;
-}
-.linkbar{
-	text-align: center;
-	background-color: #522e88;
-	clear:both;
-    z-index:99999;
-}
- .linkbar a{
-	font-family: "Arial Black", Arial, sans-serif;
-    size: 16pt;
-    color: #ffffff!important;	
-    line-height: 1.5;
-	padding: 2px;
-	border-radius: 4px;
- } 
- .linkbar a:hover{
-	 color:#c961b6;
-	 text-decoration: underline;
- }
- .linkbar a:visited{
-	 color: #ec00d6;
- }
- .linkbar a:active{
-	 color:#f5fffa;
-	 background-color: transparent;
- }
- 
- 
-.sidebar {
-	height: 100%;
-	background-color: #000000;
-	color: #f5fffa;
-	width: 33%!important;
-	clear:none;
-	margin-right: 0px;
-	padding-right: 0px;
-	position: fixed;
-	top: 74px;
-	right: 0px;
-	overflow-y:scroll;
-}
-.sidebanner{
-	background: #1e3e87;
-	background-size: cover;
-	color: #F5FFFA;
-	line-height:1.5;
-	height: 25px;
-	position: absolute;
-	left:0px;
-	clear:both;
-	width: 100%;
-}
-.sidecontainer{
-	padding-top: 25px;
-	position:relative;
-	padding-bottom:150px;
-}
-.byline{
-	text-align:right;
-}
-
-
-
-footer {
-	position: fixed;
-	bottom:0px;
-	left:0px;
-	clear:both;
-	width: 100%;
-	z-index: 999;
-	height: 50px;
-	background: #f1f5fb;
-	-webkit-box-shadow: inset 0px 4px 13px #CCD9EA;
-	box-shadow: inset 0px 4px 13px #CCD9EA;
-	font-family:"PRESS START 2P", "Arial Black", sans-serif;
-	color: #ec00d6;
-	size: 12pt;
-	text-align: center;
-	vertical-align: bottom;
-	padding-top:10px;
-	margin-top: 10px;
-}
-
-***/
+		  .half-hr{
+			  width:50%!important;
+		  }
