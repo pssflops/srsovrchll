@@ -94,7 +94,6 @@ a{
 			border-radius:4px;
 			background-position:cover;
 			width:100%;
-			padding:10px;
 		  }
 		.video-cover-inner{
 		    box-sizing: border-box;
@@ -104,6 +103,7 @@ a{
 		    right:0;
 		    bottom:0;
             overflow: hidden;
+			margin: 10px auto;
 		}
 		.video-cover-inner video{
 		    left: 50%;
