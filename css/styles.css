@@ -94,6 +94,7 @@ a{
 			border-radius:4px;
 			background-position:cover;
 			width:100%;
+			padding:10px;
 		  }
 		.video-cover-inner{
 		    box-sizing: border-box;
