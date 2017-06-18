@@ -202,6 +202,9 @@ a{
 		  .half-hr{
 			  width:50%!important;
 		  }
-		  #articles-head, #articles{
+		  #vod{
+			  background-color:#aaaaaa;
+		  }
+		  #articles{
 			background-color: #bbbbbb;  
 		  }
