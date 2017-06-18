@@ -201,3 +201,6 @@ a{
 		  .half-hr{
 			  width:50%!important;
 		  }
+		  #articles-head, #articles{
+			background-color: #bbbbbb;  
+		  }
