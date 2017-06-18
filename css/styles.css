@@ -87,12 +87,12 @@ a{
 
 	      }
 		.video-cover{
-		    background-attachment: scroll;
 			background-clip: border-box;
 			background-color: rgba(0, 0, 0, 0.5);
 			min-height: 640px;
 			overflow-x: hidden;
 			border-radius:4px;
+			background-position:cover;
 			width:100%;
 		  }
 		.video-cover-inner{
@@ -102,7 +102,6 @@ a{
             left:0;
 		    right:0;
 		    bottom:0;
-            min-width: 100%; 
             overflow: hidden;
 		}
 		.video-cover-inner video{
@@ -112,7 +111,7 @@ a{
             position: absolute;
             top: 50%;
             transform: translate(-50%, -50%);
-		    z-index: 0;
+		    z-index: 1;
 		}
 	      .btn-header {
 	      	background-color: #522E88;
