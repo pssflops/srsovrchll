@@ -195,7 +195,11 @@ a{
 			padding-top:10px;
 			margin-top: 10px;
 	      }
-
+		  #sidebar{
+			  border-radius:4px;
+			  clear:left;
+		  }
+		  
 	      body {
 	        position: relative;
 	      }
