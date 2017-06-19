@@ -53,8 +53,11 @@
 
 	    </nav>
 
+   	<div class="clearfix"></div>
+		
 	    <div class="jumbotron" id="jumbotron">
 
+		
 <!--  Interactive Twitch Window, see  https://dev.twitch.tv/docs/v5/guides/embed-video/#interactive-frames-for-live-streams-and-vods
 //This will not be allowed while hosting through github. Replacing with a temporary image for now.
 
@@ -72,53 +75,31 @@
 // un-comment this and the line below to re-enable Twitch stream
 // replacement Div structure below can be removed or commented-out when this is complete.  -->
         
-          <div class="video-cover container-fluid">
+          <div class="video-cover container bg-inverse media">
+		    <div class="row media-item">
+		      <div class="video-cover-inner rounded d-inline-block">
+			    
+			      <video class="player" autoplay="" loop="" muted="" controls="" src="vod/ow_banner_360.mp4" class="mx-auto">
+			       <source src="vod/ow_banner_360.mp4" type="video/mp4">
+			      </video>
+			      
+			    </div> 
+			</div>
+        </div><!-- END Twitch jumbotron replacement -->
 		  
-		    <div class="video-cover-inner ml-2">
-			
-			  <video class="player" autoplay="" loop="" muted="" src="vod/ow_banner_360.mp4" class="mx-auto">
-			   <source src="vod/ow_banner_360.mp4" type="video/mp4">
-			  </video>
-			  
-			</div> 
-			
-          </div><!-- END Twitch jumbotron replacement -->
-		  
-	    </div> 
-
-<!-- // begin side-nav
-	    <div id ="sidebar" class="align-top float-right bg-inverse">
-		  <div class="row bg-primary rounded">
-		    <h2 class="col display-5 text-center">Additional Links</h2>
-		  </div>
-		  <div class="col float-right">
-		        <ul class="list-group">
-		            <li class="list-group item">
-		        	  <a href="https://www.youtube.com/watch?v=S4hrudK4HQQ&index=5" class="nav-link">
-		        	    <img src="img/ana-shrug.png" alt="poz crew" title="poz crew" class="img-thumbnail"/> 
-		        	  </a>
-		        	</li>
-		        	<li class="list-group item">
-		        	  <a href="https://www.youtube.com/playlist?list=PLFK5oNJi82AzfKI1QGQcj7UKCPH-_Sxio" class="nav-link"> 
-		        	    <img src="img/lucio-shrug.png" alt="poz crew" title="poz crew" class="img-thumbnail"/> 
-		        	  </a>
-		        	</li>
-		        </ul>
-			</div>	
-		</div>
-		// end side-nav -->
+	  </div> 
+		
+    <div class="clearfix"></div>
 		
     <div id="mainContainer" class="container">
-
 	
       <div class="clearfix"></div>
 	
-	
 	    <div class="container">
 
-	      <div class="row">
+	      <div class="row bg-inverse rounded">
 		  
-	          <h1 id="contentTitle" class="col display-2 text-center">Hot VODs</h1>			
+	          <h1 id="contentTitle" class="col display-3 text-center">Hot VODs</h1>			
 			  
 	      </div>
 
@@ -187,16 +168,36 @@
 	      </div>
 
 	    </div> <!-- close vod container -->
-    
-	<hr class="half-hr" />
+	
+	<div class="clearfix"></div>
+	  <br />
+	  <div id="signup" class="container">
+	  
+	    <div class="row">
+		
+		  <h4 class="col text-right">Interested in signing up?</h4>
+		  
+            <div class="col">
+			  <div class="input-group">
+               <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i> Email: </span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                 <button class="input-group-addon btn btn-sm btn-success">Signup!</button>
+               </div>
+			</div>
+			
+		</div>
+	  
+	  </div> <!-- close signup container -->
 	
     <div class="clearfix"></div>
 	
-	 	<div class="container text-center">
+	<hr class="half-hr" />
+	
+	 	<div class="container">
 		
-              <div class="row align-top">
+              <div class="row align-top bg-inverse rounded">
 		    
-                <h1 class="col display-2 text-center">Latest Articles</h1>
+                <h1 class="col display-3 text-center text-info">Latest Articles</h1>
 			  
 		    </div>
 			
@@ -216,9 +217,9 @@
 
         <div id="art" class="container">
 		  
-		  <div class="row bg-primary rounded">
+		  <div class="row bg-inverse rounded">
 		    
-			<h1 class="col display-2 text-center">Community Artwork</h1>
+			<h1 class="col display-3 text-center text-warning">Community Artwork</h1>
 			
 		  </div>
 		  

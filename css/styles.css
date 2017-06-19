@@ -80,7 +80,7 @@ a{
 
 	      .jumbotron {
 	        width: 100%;
-	        height: 720px;
+	        min-height: 720px;
 	        padding-top: 75px;
 	        text-align: center;
 	        background-color: #4B367C;
@@ -89,10 +89,12 @@ a{
 		.video-cover{
 			background-clip: border-box;
 			background-color: rgba(0, 0, 0, 0.5);
-			min-height: 640px;
+			min-height: 720px;
 			overflow-x: hidden;
 			border-radius:4px;
 			background-position:cover;
+			padding:0;
+			margin:0;
 			width:100%;
 		  }
 		.video-cover-inner{
@@ -103,7 +105,6 @@ a{
 		    right:0;
 		    bottom:0;
             overflow: hidden;
-			margin: 10px auto;
 		}
 		.video-cover-inner video{
 		    left: 50%;
@@ -205,4 +206,7 @@ a{
 	      }
 		  .half-hr{
 			  width:50%!important;
+		  }
+		  #mainContainer h1{
+			  font-weight:bold;
 		  }
